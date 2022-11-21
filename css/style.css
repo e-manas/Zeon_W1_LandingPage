@@ -6,3 +6,9 @@
 	max-width: 1170px;
 	margin: auto;
 }
+
+.navbar-wrap {
+	display: flex;
+	align-items: center;
+	min-height: 64px;
+}
