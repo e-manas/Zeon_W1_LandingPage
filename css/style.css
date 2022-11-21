@@ -10,5 +10,13 @@
 .navbar-wrap {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	min-height: 64px;
+}
+
+.nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: space-around; */
 }
