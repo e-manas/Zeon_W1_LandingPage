@@ -1,22 +1,156 @@
-* {
-	box-sizing: border-box;
+.main-banner {
+	background: rgba(0, 0, 0, 0) url('../img/bg.png') no-repeat center;
+	background-size: cover;
+	min-height: 567px;
+	color: white;
+	padding-top: 64px;
+	/* padding-bottom: 30px; */
 }
 
-.container {
-	max-width: 1170px;
-	margin: auto;
+.main-banner__text h2{
+	font-weight: 700;
+	font-size: 28px;
+	padding-bottom: 41px;
 }
 
-.navbar-wrap {
+.main-banner__text button{
+	margin-top: 53px;
+}
+
+.info-block {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	min-height: 64px;
+	margin: 32px 0 104px;
 }
 
-.nav ul{
+.info-block__card {
+	width: 368px;
+	height: 130px;
+	padding: 16px;
+	background-color: #F8F8F8;
+	border-left: 5px solid #022B5C;
+}
+
+.info-block__card h4{
+	font-size: 16px;
+
+}
+.info-block__card.active{
+	border-left: 5px solid #EAEBEB;
+}
+.middle-card {
+	margin: 0 32px;
+}
+
+.last-news-headline {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 125%;
+	width: 575px;
+	margin-bottom: 24px;
+}
+
+.news-grid {
+	display: grid;
+	gap: 24px 32px;
+	grid-template-columns: 2fr 1fr 1fr;
+	/* grid-template-rows: 1fr 1fr; */
+	grid-template-areas: "bg sm1 sm2"
+	"bg sm3 sm4";
+	margin-bottom: 72px;
+}
+.small1{
+	grid-area: sm1;
+}
+.small2{
+	grid-area: sm2;	
+}
+.small3{
+	grid-area: sm3;	
+}
+.small4{
+	grid-area: sm4;	
+}
+.big-grid-card {
+	grid-area: bg;
+}
+
+
+.articles-field {
+
+}
+.article {
+	position: relative;
+	background: #FAFAFA url("../img/article1.png") no-repeat;
+	height: 480px;
+	margin-bottom: 48px;
+}
+.article-2 {
+	background: #FAFAFA url("../img/article2.png") no-repeat right;
+}
+.article-3 {
+	background: #FAFAFA url("../img/article3.png") no-repeat;
+}
+.article-textarea {
+	position: absolute;
+	top: 13%;
+	right: 64px;
+	width: 540px;
+	height: 365px;
+	background-color: white;
+	line-height: 140%;
+	z-index: 10;
+	padding: 60px 50px;
+}
+.article-textarea p{
+	padding: 20px 0;
+}
+
+
+.article-textarea-middle {
+	right: 550px;
+}
+
+.black-btn {
+	border-color: black;
+	color: black;
+}
+
+
+
+
+ul {
 	display: flex;
-	flex-direction: row;
+	padding: 1rem;
 	align-items: center;
-	/* justify-content: space-around; */
+}
+
+li {
+	list-style: none;
+	margin: 1rem;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+ul li a::after {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0;
+	background-color: #c4c4f7;
+}
+
+li a:hover::after {
+	width: 100%;
+}
+
+button {
+	padding: 11px 40px;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	border: white 1px solid;
+	font-weight: 500;
 }
