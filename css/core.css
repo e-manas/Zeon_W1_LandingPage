@@ -6,26 +6,26 @@
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 html {
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
 	/* 2 */
 }
-
 body {
 	font: 14px 'Inter', sans-serif;
 	font-weight: 400;
-	line-height: 150%;
-	width: 100%;
-	position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+font-weight: 700;
 
 h2 {
-	font-weight: 700;
 	font-size: 28px;
+}
+h3 {
+	font-size: 24px;
 }
 
 a {
@@ -39,9 +39,50 @@ img {
 
 ul {
 	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+li {
+	margin: 1rem;
+	/* list-style: none; */
+}
+
+ul li a {
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+ul li a::after {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0;
+	background-color: #c4c4f7;
+}
+
+li a:hover::after {
+	width: 100%;
+}
+
+
+button {
+	padding: 11px 40px;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	border: white 1px solid;
+	font-weight: 500;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	line-height: 150%;
 }
 
 .container {
+	width: 100%;
 	max-width: 1168px;
 	margin: 0 auto;
 }
@@ -56,7 +97,6 @@ ul {
 
 .navbar__inner {
 	display: flex;
-	/* align-items: center; */
 	justify-content: space-between;
 	height: 64px;
 }
@@ -70,7 +110,29 @@ ul {
 
 .main-banner__text {
 	color: white;
-	padding-top: 162px;
-	/* 290px */
+	padding-top: 162px; /* 290px */
 	padding-left: 68px;
+}
+
+.footer {
+	background-color: #181818;
+}
+
+/* >1'200px ноутбуки и ТВ;
+1'024-992px планшеты;
+767px смартфоны;
+360px iPhone */
+@media (max-width: 1366px) { 
+	/* 1150px / 1168\1366*/
+	.container {
+		width: 100%;
+		padding: 0 99px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 95%;
+		padding: 0 15px;
+	}
 }

@@ -117,40 +117,24 @@
 
 
 
-
-ul {
+.footer__inner {
 	display: flex;
-	padding: 1rem;
-	align-items: center;
+	padding-top: 56px;
+	padding-bottom: 80px;
+	
 }
 
-li {
-	list-style: none;
-	margin: 1rem;
-}
-
-ul li a {
-	text-decoration: none;
-	color: #a3a3a3;
-}
-
-ul li a::after {
-	content: '';
-	display: block;
-	height: 4px;
-	width: 0;
-	background-color: #c4c4f7;
-}
-
-li a:hover::after {
-	width: 100%;
-}
-
-button {
-	padding: 11px 40px;
-	background-color: transparent;
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
 	color: white;
-	outline: none;
-	border: white 1px solid;
-	font-weight: 500;
+
+}
+
+.socials {
+
+}
+
+.footer__map {
+	/* padding: 56px 0 80px 25px; */
 }
