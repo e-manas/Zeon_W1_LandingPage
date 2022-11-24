@@ -5,58 +5,61 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0 ">
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> >
 	<title>Теплосеть</title>
 </head>
 
 <body>
-	<header class="navbar">
+	<header class="header">
 		<div class="container">
-			<div class="navbar__inner">
-				<figure class="logo navbar__logo">
+			<div class="header__inner">
+				<figure class="header__logo">
 					<img src="img/logo.png" alt="логотип Бишкек Теплосеть">
 				</figure><!-- /.logo navbar__logo -->
-				<nav class="navbar--list">
-					<ul class="nav-items">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Наша миссия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<ul class="language">Язык:
-						<li><span class="fi fi-kg"></span></li>
-						<li><span class="fi fi-ru"></span></li>
-					</ul>
+				<nav class="nav">
+					<a class="nav__link" href="#">О нас</a>
+					<a class="nav__link" href="#">Контакты</a>
+					<a class="nav__link" href="#">Наша миссия</a>
 				</nav>
-			</div><!-- /.navbar-wrap-->
+				<div class="language">Язык:
+					<a><span class="fi fi-kg"></span></a>
+					<a><span class="fi fi-ru"></span></a>
+				</div>
+			</div><!-- /.header__inner-->
 		</div><!-- /.container -->
 	</header>
 
-	<section class="main-banner">
+
+	<section class="intro">
 		<div class="container">
-			<div class="main-banner__text">
+			<div class="intro__inner">
 				<h2>Теплосети</h2>
 				<p>Тепло в каджый уголок нашей страны</p>
-				<button class="about-us action">Подробнее о нас</button>
+				<button class="btn action">Подробнее о нас</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="nav-more">
+
+	<section class="info-block-wrapper">
 		<div class="container">
 			<div class="info-block">
 				<div class="info-block__card active">
-					<h4><a href="/">Личный кабинет</a></h4>
+					<h4 class="blur"><a href="#">Личный кабинет</a></h4>
 					<p>На стадии разработки</p>
 				</div>
 				<div class="info-block__card middle-card">
-					<h4><a href="/">Как подключиться?</a></h4>
+					<h4><a href="#">Как подключиться?</a></h4>
 					<p>Подключение объектов к системе Централизованного теплоснабжения</p>
 				</div>
 				<div class="info-block__card">
-					<h4><a href="/">Тарифы и калькуляторы</a></h4>
+					<h4><a href="#">Тарифы и калькуляторы</a></h4>
 					<p>Действующие тарифы на услуги Кыргызтеплоэнерго</p>
 				</div>
 			</div>
@@ -67,14 +70,40 @@
 		<div class="last-news-headline">Последние актуальные новости<br>в мире энергии</div>
 	</div>
 
-	<section class="news">
+	<section class="news-grid-wrapper">
 		<div class="container">
 			<div class="news-grid">
-				<img src="img/big_photo_for_NEWS.png" alt="" class="big-grid-card">
-				<img src="img/small_photo_for_NEWS.png" alt="" class="small-grid-card small1">
-				<img src="img/small_photo_for_NEWS.png" alt="" class="small-grid-card small2">
-				<img src="img/small_photo_for_NEWS.png" alt="" class="small-grid-card small3">
-				<img src="img/small_photo_for_NEWS.png" alt="" class="small-grid-card small4">
+				<div class="big-grid-card">
+					<div class="grid-card-textarea">
+
+						<div class="big-news-date">08.04.03 18:34</div>
+						<div class="big-news-title"><h4>Встреча министра образования с учителями школы Гимназии №70 города бишкекка</h4></div>
+					</div>
+				</div>
+				<div class="small-grid-card small1">
+					<div class="grid-card-textarea-small">
+						<div class="small-news-date">08.04.03 18:34</div>
+						<div class="small-news-title"><h5>Встреча министра образования с учителями школы...</h5></div>
+					</div>
+				</div>
+				<div class="small-grid-card small2">
+					<div class="grid-card-textarea-small">
+						<div class="small-news-date">08.04.03 18:34</div>
+						<div class="small-news-title"><h5>Встреча министра образования с учителями школы...</h5></div>
+					</div>
+				</div>
+				<div class="small-grid-card small3">
+					<div class="grid-card-textarea-small">
+						<div class="small-news-date">08.04.03 18:34</div>
+						<div class="small-news-title"><h5>Встреча министра образования с учителями школы...</h5></div>
+					</div>
+				</div>
+				<div class="small-grid-card small4">
+					<div class="grid-card-textarea-small">
+						<div class="small-news-date">08.04.03 18:34</div>
+						<div class="small-news-title"><h5>Встреча министра образования с учителями школы...</h5></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -85,31 +114,31 @@
 				<article class="article-1 article">
 					<div class="article-textarea">
 						<h2>Как мы начинали?</h2>
-						<p>Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
+						<p class="grey-text">Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
 							Объекты исследования экологии — в основном, системы выше уровня отдельных организмов: популяции,
 							биоценозы, экосистемы, а также вся биосфера. Предмет изучения — организация и функционирование таких
 							систем. Главная задача прикладной экологии — </p>
-						<button class="about-us black-btn">Подробнее о нас</button>
+						<button class="btn btn-black">Подробнее о нас</button>
 					</div>
 				</article>
 				<article class="article-2 article middle-article">
 					<div class="article-textarea article-textarea-middle">
 						<h2>Наша дальнейшая цель и будущее</h2>
-						<p>Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
+						<p class="grey-text">Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
 							Объекты исследования экологии — в основном, системы выше уровня отдельных организмов: популяции,
 							биоценозы, экосистемы, а также вся биосфера. Предмет изучения — организация и функционирование таких
 							систем. Главная задача прикладной экологии — </p>
-						<button class="about-us black-btn">Подробнее о нас</button>
+						<button class="btn btn-black">Подробнее о нас</button>
 					</div>
 				</article>
 				<article class="article-3 article">
 					<div class="article-textarea">
 						<h2>Кто мы?</h2>
-						<p>Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
+						< class="grey-text">Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы исследований.
 							Объекты исследования экологии — в основном, системы выше уровня отдельных организмов: популяции,
 							биоценозы, экосистемы, а также вся биосфера. Предмет изучения — организация и функционирование таких
 							систем. Главная задача прикладной экологии — </p>
-						<button class="about-us black-btn">Подробнее о нас</button>
+						<button class="btn btn-black">Подробнее о нас</button>
 					</div>
 				</article>
 			</div>
@@ -122,19 +151,19 @@
 				<div class="footer__contacts">
 					<h3>Наши контакты</h3>
 					<div class="contacs">
-						<i class="fa-solid fa-phone"></i><p>+996 (777) 44 55 66</p>
-						<p>+996 (777) 44 55 66</p>
-						<p>+996 (777) 44 55 66</p>
+						<p class="contacts__item">+996 (777) 44 55 66</p>
+						<p class="contacts__item">+996 (777) 44 55 66</p>
+						<p class="contacts__item">+996 (777) 44 55 66</p>
 					</div>
-
+					<hr>
 					<div class="socials">
-						<p>Facebook</p>
-						<p>Instagram</p>
-						<p>Youtube</p>
+						<p class="socials__item">Facebook</p>
+						<p class="socials__item">Instagram</p>
+						<p class="socials__item">Youtube</p>
 					</div>
-
+					<hr>
 					<div class="address">
-						<p>г.Бишкек, пр.Чуй</p>
+						<p class="address__item">г.Бишкек, пр.Чуй</p>
 					</div>
 				</div>
 				<div class="footer__map">
