@@ -2,7 +2,7 @@
 	min-height: 567px;
 	padding-top: 64px;
 
-	background: rgba(0, 0, 0, 0) url('../img/bg.png') no-repeat center;
+	background: rgba(0, 0, 0, 0) url('../img/intro.png') no-repeat center;
 	background-size: cover;
 	/* height: 65vh; */
 	color: white;
@@ -10,7 +10,7 @@
 }
 
 .intro__inner h2{
-	margin-bottom: 28px;
+	margin-bottom: 41px;
 
 	font-weight: 700;
 	font-size: 28px;
@@ -161,7 +161,7 @@
 	display: flex;
 	padding-top: 56px;
 	padding-bottom: 80px;
-	
+
 }
 
 .footer__contacts {
@@ -204,7 +204,7 @@ hr {
 1'024-992px планшеты;
 767px смартфоны;
 360px iPhone */
-@media (max-width: 1366px) { 
+@media (max-width: 1366px) {
 	/* 1150px / 1168\1366*/
 	.container {
 		width: 100%;
