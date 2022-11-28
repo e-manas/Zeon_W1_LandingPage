@@ -148,7 +148,6 @@
 	padding: calc( 10px + (20 - 10) * ((100vw - 320px) / (1366 - 320)) )  0;
 }
 
-
 .article-textarea-middle {
 	left: 5.5%;
 }

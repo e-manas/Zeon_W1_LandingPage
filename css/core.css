@@ -8,15 +8,6 @@
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-a {
-	text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-weight: 700;
-	font-size: inherit;
-}
-
 html,
 body {
 	height: 100%;
@@ -25,13 +16,27 @@ body {
 	font-weight: 400;
 	-webkit-text-size-adjust: 100%;
 }
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 700;
+	font-size: inherit;
+}
+a {
+	text-decoration: none;
+}
 
 /* :root {
   --color-nav-border-grey: #EAEBEB;
   --color-btn-bg-deepBlue: #0F2A59;
-  --color-navLInk-footer-bg-black: #181818;
-
+  --color-navLink-footer-bg-black: #181818;
+	—color-p-grey: #B6B6B6;
+	—color-icon-setting-grey: #F8F8F8;
+	—color-article-bg-pale-grey: #FAFAFA;
+	—color-accent-orange: #FF8A3A;
+	--color-btn-bg-deepBlue: #262626;
+	—color-footer-icons-blue: #022B5C;
 } */
+
 h2 {
 	/* font-size: 28px; */
 	font-size: calc( 22px + (28 - 22) * ((100vw - 320px) / (1366 - 320)) );
@@ -137,7 +142,6 @@ p {
 	border-left: none;
 }
 
-
 .intro__inner {
 	margin-top: 162px; /* 290px */
 	/* margin-left: 68px; */
@@ -194,11 +198,7 @@ p {
 	margin-top: 16px;
 	font-size: 13px;
 }
-.icon {
-	width: 18px;
-	height: 18px;
-	color: #022B5C;
-}
+
 hr {
 	height: 1px;
 	/* width: 200px; */
