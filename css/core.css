@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
@@ -6,50 +8,63 @@
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-html {
-	line-height: 1.5;
-	-webkit-text-size-adjust: 100%;
-	/* 2 */
-}
-body {
-	font: 14px 'Inter', sans-serif;
-	font-weight: 400;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-}
-
-h2 {
-	font-size: 28px;
-	font-weight: 700;
-}
-h3 {
-	font-size: 24px;
-}
-h4 {
-	font-size: 20px;
-}
-h5 {
-	font-size: 13px;
-	line-height: 140%
-}
-
 a {
 	text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 700;
+	font-size: inherit;
+}
 
+html,
+body {
+	height: 100%;
+	line-height: 1.5;
+	font: 14px 'Inter', sans-serif;
+	font-weight: 400;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* :root {
+  --color-nav-border-grey: #EAEBEB;
+  --color-btn-bg-deepBlue: #0F2A59;
+  --color-navLInk-footer-bg-black: #181818;
+
+} */
+h2 {
+	/* font-size: 28px; */
+	font-size: calc( 22px + (28 - 22) * ((100vw - 320px) / (1366 - 320)) );
+}
+h3 {
+	/* font-size: 24px; */
+	font-size: calc( 20px + (24 - 20) * ((100vw - 320px) / (1366 - 320)) );
+}
+h4 {
+	/* font-size: 20px; */
+	font-size: calc( 18px + (20 - 18) * ((100vw - 320px) / (1366 - 320)) );
+}
+h5 {
+	/* font-size: 13px; */
+	font-size: calc( 11px + (13 - 11) * ((100vw - 320px) / (1366 - 320)) );
+	line-height: 140%
+}
+p {
+	/* font-size: 14px; */
+	font-size: calc( 12px + (14 - 12) * ((100vw - 320px) / (1366 - 320)) );
+}
 
 .wrapper {
 	position: relative;
-	width: 100%;
-	line-height: 150%;
+	min-height: 100%;
 }
 
 .container {
 	width: 100%;
-	max-width: 1168px;
+	max-width: 1366px;
 	margin: 0 auto;
+	/* padding: 0 99px; */
+	padding: 0 calc( 15px + (99 - 15) * ((100vw - 320px) / (1366 - 320)) );
 }
 
 .header {
@@ -66,12 +81,12 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 64px;
+	/* height: 64px; */
+	height: calc( 55px + (64 - 55) * ((100vw - 320px) / (1366 - 320)) );
 }
-.header__logo {
-	font-size: 30px;
-	font-weight: 700;
-	color: black;
+.header__logo>img{
+	min-width: 100%;
+	display: block;
 }
 
 .nav {
@@ -80,18 +95,18 @@ a {
 	align-content: space-around;
 	align-items: center;
 }
-
 .nav__link {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 8px;
+	/* margin: 0 8px; */
+	margin: 0 calc( 4px + (8 - 4) * ((100vw - 320px) / (1366 - 320)) );
 	position: relative;
 
 	color: #181818;
 	text-decoration: none;
 	border-left: 1px solid #EAEBEB;
-	/* margin-left: 10px; */
-	padding-left: 14px;
+	/* padding-left: 14px; */
+	padding-left: calc( 7px + (14 - 7) * ((100vw - 320px) / (1366 - 320)) );
 	transition: color .3s linear;
 }
 .nav__link::after {
@@ -116,7 +131,6 @@ a {
 .nav__link:hover::after {
 	opacity: 1;
 	height: 3px;
-
 }
 
 .nav__link:first-of-type {
@@ -124,10 +138,10 @@ a {
 }
 
 
-
 .intro__inner {
 	margin-top: 162px; /* 290px */
-	margin-left: 68px;
+	/* margin-left: 68px; */
+	margin-left: calc( 40px + (68 - 40) * ((100vw - 320px) / (1366 - 320)) );
 	color: white;
 }
 
@@ -153,30 +167,55 @@ a {
 .footer {
 	background-color: #181818;
 }
+.footer__inner {
+	display: flex;
+	/* padding-top: 56px; */
+	padding-top: calc( 40px + (56 - 40) * ((100vw - 320px) / (1366 - 320)) );
+	/* padding-bottom: 80px; */
+	padding-bottom: calc( 15px + (80 - 15) * ((100vw - 320px) / (1366 - 320)) );
+	justify-content: space-between;
+	
+}
 
+.contacts-area {
+	display: flex;
+	flex-basis: 25%;
+	flex-direction: column;
+	color: white;
+}
+.contacts__item {
+	margin-top: 16px;
+	font-size: 13px;
+	letter-spacing: 2%;
+}
+
+.socials__item, 
+.address__item {
+	margin-top: 16px;
+	font-size: 13px;
+}
+.icon {
+	width: 18px;
+	height: 18px;
+	color: #022B5C;
+}
 hr {
 	height: 1px;
-	width: 70%; /* 200px */
+	/* width: 200px; */
+	width: calc( 150px + (200 - 150) * ((100vw - 320px) / (1366 - 320)) );
 	color: #262626;
-	margin: 20px 0;
+	margin: 20px 0 10px;
+}
+
+.map {
+	/* width: 869px; */
+	width: calc( 290px + (869 - 290) * ((100vw - 320px) / (1366 - 320)) );
+	overflow: hidden;
+}
+
+iframe {
+	height: 342px;
+	width: calc( 290px + (869 - 290) * ((100vw - 320px) / (1366 - 320)));
 }
 
 
-/* >1'200px ноутбуки и ТВ;
-1'024-992px планшеты;
-767px смартфоны;
-360px iPhone */
-@media (max-width: 1366px) { 
-	/* 1150px / 1168\1366*/
-	.container {
-		width: 100%;
-		padding: 0 99px;
-	}
-}
-
-@media (max-width: 767px) {
-	.container {
-		width: 95%;
-		padding: 0 15px;
-	}
-}

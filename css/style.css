@@ -1,6 +1,7 @@
 .intro {
 	min-height: 567px;
-	padding-top: 64px;
+	/* padding-top: 64px; */
+	padding-top: calc( 55px + (64 - 55) * ((100vw - 320px) / (1366 - 320)) );
 
 	background: rgba(0, 0, 0, 0) url('../img/intro.png') no-repeat center;
 	background-size: cover;
@@ -9,64 +10,69 @@
 	/* padding-bottom: 30px; */
 }
 
-.intro__inner h2{
-	margin-bottom: 41px;
-
-	font-weight: 700;
-	font-size: 28px;
+.intro-margin {
+	/* margin-top: 41px; */
+	margin-top: calc( 20px + (41 - 20) * ((100vw - 320px) / (1366 - 320)) );
+	/* margin-bottom: 53px; */
+	margin-bottom: calc( 25px + (53 - 25) * ((100vw - 320px) / (1366 - 320)) );
 }
 
-.intro__inner button{
-	margin-top: 53px;
-}
-
-.info-block {
+.info {
 	display: flex;
-	margin: 32px 0 104px;
+	/* margin: 32px 0 104px; */
+	margin: calc( 25px + (32 - 25) * ((100vw - 320px) / (1366 - 320)) ) 0 calc( 30px + (104 - 30) * ((100vw - 320px) / (1366 - 320)) );
 }
 
-.info-block__card {
+.info__card {
 	width: 368px;
 	height: 130px;
-	padding: 16px;
-	/* background-color: #F8F8F8; */
+	/* padding: 16px; */
+	padding: calc( 7px + (16 - 7) * ((100vw - 320px) / (1366 - 320)) );
 	background: scroll #F8F8F8 url('../img/Setting.png') 93% no-repeat;
-	border-left: 5px solid #022B5C;
+	/* border-left: 5px solid #022B5C; */
+	border-left: calc( 3px + (5 - 3) * ((100vw - 320px) / (1366 - 320)) ) solid #022B5C;
+	display: inline-block;
+}
+.info__card h4{
+	/* font-size: 16px; */
+	font-size: calc( 14px + (16 - 14) * ((100vw - 320px) / (1366 - 320)) );
+}
+.info__card p {
+	margin: 7px 0;
 }
 
-.info-block__card h4{
-	font-size: 16px;
-
-}
-.info-block__card.active{
-	border-left: 5px solid #EAEBEB;
+.active{
+	/* border-left: 5px solid #EAEBEB; */
+	border-left: calc( 3px + (5 - 3) * ((100vw - 320px) / (1366 - 320)) ) solid #EAEBEB;
 }
 .blur {
 	text-shadow: 0 0 2px black;
 }
 
 .middle-card {
-	margin: 0 32px;
+	/* margin: 0 32px; */
+	margin: 0 calc( 15px + (32 - 15) * ((100vw - 320px) / (1366 - 320)) );
 }
 
-.last-news-headline {
-	font-size: 28px;
-	font-weight: 700;
+.last-news-headline h2 {
+	display: block;
 	line-height: 125%;
-	width: 50%; /* 575px */
+	width: 47%; /* 575px */
 	margin-bottom: 24px;
 }
 
 .news-grid {
 	display: grid;
-	gap: 24px 32px;
+	height: 383px;
+	color: white;
+	/* gap: 24px 32px; */
+	gap: calc( 12px + (24 - 12) * ((100vw - 320px) / (1366 - 320)) )  calc( 16px + (32 - 16) * ((100vw - 320px) / (1366 - 320)) );
 	grid-template-columns: 2fr 1fr 1fr;
 	/* grid-template-rows: 1fr 1fr; */
 	grid-template-areas: "bg sm1 sm2"
 	"bg sm3 sm4";
-	margin-bottom: 72px;
-	height: 383px;
-	color: white;
+	/* margin-bottom: 72px; */
+	margin-bottom: calc( 40px + (72 - 40) * ((100vw - 320px) / (1366 - 320)) );
 }
 .small1{
 	grid-area: sm1;
@@ -110,15 +116,14 @@
 }
 
 
-
-.articles-field {
-
-}
 .article {
 	position: relative;
-	background: #FAFAFA url("../img/article1.png") no-repeat;
+	/* background-color: #FAFAFA; */
 	height: 480px;
 	margin-bottom: 48px;
+}
+.article-1 {
+	background: #FAFAFA url("../img/article1.png") no-repeat;
 }
 .article-2 {
 	background: #FAFAFA url("../img/article2.png") no-repeat right;
@@ -128,22 +133,24 @@
 }
 .article-textarea {
 	position: absolute;
-	top: 13%;
-	right: 12%;
-	width: 46.2%;
+	top: 11.5%; /* 55px */
+	right: 5.5%; /* 64px */
+	width: 46.2%; /* 540px */
 	height: 365px;
 	background-color: white;
 	line-height: 140%;
 	z-index: 10;
-	padding: 60px 50px;
+	/* padding: 50px 48px; */
+	padding: calc( 15px + (50 - 15) * ((100vw - 320px) / (1366 - 320)) )  calc( 13px + (48 - 13) * ((100vw - 320px) / (1366 - 320)) );
 }
 .article-textarea p{
-	padding: 20px 0;
+	/* padding: 20px 0; */
+	padding: calc( 10px + (20 - 10) * ((100vw - 320px) / (1366 - 320)) )  0;
 }
 
 
 .article-textarea-middle {
-	left: 5%;
+	left: 5.5%;
 }
 
 .btn-black {
@@ -156,65 +163,103 @@
 
 
 
-
-.footer__inner {
-	display: flex;
-	padding-top: 56px;
-	padding-bottom: 80px;
-
-}
-
-.footer__contacts {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 27%;
-	color: white;
-}
-.contacts__item {
-	margin-top: 16px;
-	font-size: 13px;
-	letter-spacing: 2%;
-}
-
-hr {
-	height: 1px;
-	width: 70%; /* 200px */
-	color: #262626;
-	margin: 20px 0 4px;
-}
-
-.socials__item, .address__item {
-	margin-top: 16px;
-	font-size: 13px;
-}
-.icon {
-	width: 18px;
-	height: 18px;
-	color: #022B5C;
-}
-
-.footer__map {
-	/* padding: 56px 0 80px 25px; */
-}
-
-
-
-
-/* >1'200px ноутбуки и ТВ;
+/* ноутбуки и ТВ;
 1'024-992px планшеты;
-767px смартфоны;
-360px iPhone */
-@media (max-width: 1366px) {
+767px смартфоны; 540px
+320px * 480px iPhone */ 
+@media (max-width: 1366px) { 
 	/* 1150px / 1168\1366*/
-	.container {
-		width: 100%;
-		padding: 0 99px;
+}
+
+@media (max-width: 991px) {
+	.language>span {
+		display: none;
 	}
+	.header__logo>img {
+		width: 15%;
+	}
+
 }
 
 @media (max-width: 767px) {
-	.container {
+	.info {
+		flex-direction: column;
+		width: 100%;
+	}
+	.info__card {
+		margin-top: 10px;
 		width: 95%;
-		padding: 0 15px;
+		height: 75px;
+		margin-left: 15px;
+	}
+	.last-news-headline h2{
+		width: 100%;
+		margin: 24px auto;
+	}
+	.news-grid {
+		margin: 0 auto calc( 40px + (53 - 40) * ((100vw - 320px) / (767 - 320)) );
+		width: 90%;
+		/* height: 800px; */
+		height: calc( 600px + (800 - 600) * ((100vw - 320px) / (1366 - 320)) );
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr 1fr;
+		grid-template-areas: "bg bg"
+		"sm1 sm2"
+		"sm3 sm4";
+	}
+	.article-textarea {
+		background-color: rgba(256, 256, 256, .4);
+		width: 60%;
+	}
+	.grey-text {
+		color: black;
+	}
+
+	.footer__inner {
+		display: block;
+
+	}
+	.contacts-area {
+		width: 100%;
+		flex-direction: row;
+		flex-basis: 100%;
+		justify-content: space-around;
+	}
+	.map {
+		display: block;
+		margin: 25px auto;
+		width: fit-content;
+	}
+	hr {
+		display: none;
 	}
 }
+
+
+@media (max-width: 540px) { /*480px*/
+	.news-grid {
+		width: 100%;
+	}
+	.article-textarea {
+		width: 89%;
+	}
+	.info__card {
+		width: 93%;
+	}
+	.contacts-area {
+		flex-direction: column;
+		align-items: center;
+	}
+	hr {
+		display: block;
+		margin: 15px 0 5px;
+	}
+
+}
+
+
+/* @media (max-width: 320px) {
+	.container {
+		
+	}
+} */
