@@ -1,0 +1,18 @@
+.main p {
+	font-weight: 300;
+	color: #7F8D97;
+
+}
+.main {
+	/* width: 868px; */
+	width: calc( 290px + (868 - 290) * ((100vw - 320px) / (1366 - 320)) );
+	height: auto;
+	/* height: calc( 480px + (670 - 480) * ((100vw - 320px) / (1366 - 320)) ); */
+	margin-top: 34px;
+	/* margin-bottom: 91px; */
+	margin-bottom: calc( 30px + (91 - 30) * ((100vw - 320px) / (1366 - 320)) );
+
+}
+h1 {
+	margin-bottom: 20px;
+}

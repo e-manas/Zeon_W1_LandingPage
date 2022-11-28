@@ -11,10 +11,10 @@
 }
 
 .intro-margin {
-	/* margin-top: 41px; */
-	margin-top: calc( 20px + (41 - 20) * ((100vw - 320px) / (1366 - 320)) );
-	/* margin-bottom: 53px; */
-	margin-bottom: calc( 25px + (53 - 25) * ((100vw - 320px) / (1366 - 320)) );
+	/* margin-top: 32px; */
+	margin-top: calc( 20px + (32	 - 20) * ((100vw - 320px) / (1366 - 320)) );
+	/* margin-bottom: 50px; */
+	margin-bottom: calc( 25px + (50 - 25) * ((100vw - 320px) / (1366 - 320)) );
 }
 
 .info {
@@ -133,12 +133,12 @@
 }
 .article-textarea {
 	position: absolute;
-	top: 11.5%; /* 55px */
+	top: 11.1%; /* 55px */
 	right: 5.5%; /* 64px */
 	width: 46.2%; /* 540px */
-	height: 365px;
+	height: 370px;
 	background-color: white;
-	line-height: 140%;
+	/* line-height: 140%; */
 	z-index: 10;
 	/* padding: 50px 48px; */
 	padding: calc( 15px + (50 - 15) * ((100vw - 320px) / (1366 - 320)) )  calc( 13px + (48 - 13) * ((100vw - 320px) / (1366 - 320)) );
@@ -146,15 +146,20 @@
 .article-textarea p{
 	/* padding: 20px 0; */
 	padding: calc( 10px + (20 - 10) * ((100vw - 320px) / (1366 - 320)) )  0;
+	line-height: 1.4;
 }
 
 .article-textarea-middle {
 	left: 5.5%;
 }
+.article-textarea-third {
+	right: 4.1%;
+}
 
 .btn-black {
 	border-color: black;
 	color: black;
+	padding: 12px 68px;
 }
 .grey-text {
 	color: #B6B6B6;
